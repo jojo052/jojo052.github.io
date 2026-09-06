@@ -1,0 +1,5 @@
+__pycache__/
+.DS_Store
+*.log
+# Unused portrait extracted from the source CV; retained locally only.
+assets/portrait.jpg

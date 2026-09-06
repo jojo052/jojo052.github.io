@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN" data-language="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{DESCRIPTION_ZH}}" data-zh="{{DESCRIPTION_ZH}}" data-en="{{DESCRIPTION_EN}}">
+  <title>{{TITLE_ZH}} · Projects</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cosmic.css">
+  <meta name="theme-color" content="#030711">
+  <script src="app.js" defer></script>
+</head>
+<body data-title-zh="{{TITLE_ZH}}" data-title-en="{{TITLE_EN}}">
+  <a class="skip-link" href="#main"><span lang="zh-CN">跳转至内容</span><span lang="en">Skip to content</span></a>
+  <header class="site-header"><div class="header-inner">
+    <a class="wordmark" href="#about">{{NAME}}<span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#currently">Currently</a><a href="#selected-work">Selected Work</a>
+      <a href="#experience"><span lang="zh-CN">经历</span><span lang="en">Experience</span></a>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-language="zh" aria-pressed="true">中</button><span aria-hidden="true">/</span>
+      <button type="button" data-set-language="en" aria-pressed="false">EN</button>
+    </div>
+  </div></header>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Profile / 个人信息">
+      <div class="portrait-frame"><img class="portrait" src="{{PHOTO}}" alt="{{TITLE_ZH}} / {{TITLE_EN}}" width="180" height="216"></div>
+      <div class="profile-copy"><h2>{{NAME}}</h2><p class="profile-role">{{ROLE}}</p>
+      <p class="profile-education">{{EDUCATION}}<span class="degree">{{DEGREE}}</span></p>
+      <div class="profile-links"><a href="{{GITHUB}}"><span class="link-icon" aria-hidden="true">↗</span> GitHub</a>
+      <a href="mailto:{{EMAIL}}"><span class="link-icon" aria-hidden="true">@</span> {{EMAIL}}</a></div></div>
+    </aside>
+    <main id="main">
+      <section class="intro" id="about"><p class="eyebrow">VLA · DATA · TRAINING · EVALUATION</p>
+        <h1><span lang="zh-CN">你好，我是{{TITLE_ZH}}。</span><span lang="en">Hello, I'm {{TITLE_EN}}.</span></h1>
+        <p class="intro-text">{{INTRO}}</p><p class="interests">{{INTERESTS}}</p>
+      </section>
+      <section id="currently" class="section"><div class="section-heading"><h2>Currently<span lang="zh-CN" class="heading-translation">近期在做</span></h2><span class="section-mark" aria-hidden="true">01</span></div>
+        <ul class="current-list">{{CURRENT}}</ul>
+      </section>
+      <section id="selected-work" class="section"><div class="section-heading"><h2>Selected Work<span lang="zh-CN" class="heading-translation">精选项目</span></h2><span class="section-mark" aria-hidden="true">02</span></div>
+        <div class="projects">{{PROJECTS}}</div>
+      </section>
+      <section id="experience" class="section"><div class="section-heading"><h2>Experience<span lang="zh-CN" class="heading-translation">经历</span></h2><span class="section-mark" aria-hidden="true">03</span></div>
+        {{EXPERIENCE}}
+      </section>
+      <footer><span>© <span id="year">2026</span> {{NAME}}</span><a href="{{GITHUB}}">GitHub <span aria-hidden="true">↗</span></a></footer>
+      <details class="image-credits"><summary><span lang="zh-CN">星空影像来源</span><span lang="en">Space imagery credits</span> · NASA / ESA</summary>
+        <p><a href="https://science.nasa.gov/asset/hubble/westerlund-2/">Westerlund 2</a> · NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team.</p>
+        <p><a href="https://science.nasa.gov/missions/hubble/quintuplet-cluster/">Quintuplet Cluster</a> · NASA.</p>
+      </details>
+    </main>
+  </div>
+</body>
+</html>

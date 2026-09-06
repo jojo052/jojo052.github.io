@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN" data-language="zh">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="我在新南威尔士大学学习信息技术，方向为人工智能。目前关注视觉语言动作模型（VLA）的数据、训练与评测，以及机器人学习中的推理效率。这里记录我的项目与实践。" data-zh="我在新南威尔士大学学习信息技术，方向为人工智能。目前关注视觉语言动作模型（VLA）的数据、训练与评测，以及机器人学习中的推理效率。这里记录我的项目与实践。" data-en="I study Information Technology with a focus on Artificial Intelligence at UNSW Sydney. My current interests are data, training, and evaluation for vision-language-action (VLA) models, alongside inference efficiency in robot learning. This site brings together my projects and practical work.">
+  <title>钟选 · Projects</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cosmic.css">
+  <meta name="theme-color" content="#030711">
+  <script src="app.js" defer></script>
+</head>
+<body data-title-zh="钟选" data-title-en="Xuan Zhong">
+  <a class="skip-link" href="#main"><span lang="zh-CN">跳转至内容</span><span lang="en">Skip to content</span></a>
+  <header class="site-header"><div class="header-inner">
+    <a class="wordmark" href="#about"><span lang="zh-CN">钟选</span><span lang="en">Xuan Zhong</span><span class="wordmark-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#currently">Currently</a><a href="#selected-work">Selected Work</a>
+      <a href="#experience"><span lang="zh-CN">经历</span><span lang="en">Experience</span></a>
+    </nav>
+    <div class="language-switch" role="group" aria-label="Language / 语言">
+      <button type="button" data-set-language="zh" aria-pressed="true">中</button><span aria-hidden="true">/</span>
+      <button type="button" data-set-language="en" aria-pressed="false">EN</button>
+    </div>
+  </div></header>
+  <div class="page-layout">
+    <aside class="profile" aria-label="Profile / 个人信息">
+      <div class="portrait-frame"><img class="portrait" src="assets/profile-personal.jpeg" alt="钟选 / Xuan Zhong" width="180" height="216"></div>
+      <div class="profile-copy"><h2><span lang="zh-CN">钟选</span><span lang="en">Xuan Zhong</span></h2><p class="profile-role"><span lang="zh-CN">具身智能 · 多模态学习</span><span lang="en">Embodied AI · Multimodal Learning</span></p>
+      <p class="profile-education"><span lang="zh-CN">新南威尔士大学</span><span lang="en">UNSW Sydney</span><span class="degree"><span lang="zh-CN">信息技术硕士 · 人工智能方向</span><span lang="en">Master of Information Technology · Artificial Intelligence</span></span></p>
+      <div class="profile-links"><a href="https://github.com/jojo052"><span class="link-icon" aria-hidden="true">↗</span> GitHub</a>
+      <a href="mailto:isaac2027xuanzhong@163.com"><span class="link-icon" aria-hidden="true">@</span> isaac2027xuanzhong@163.com</a></div></div>
+    </aside>
+    <main id="main">
+      <section class="intro" id="about"><p class="eyebrow">VLA · DATA · TRAINING · EVALUATION</p>
+        <h1><span lang="zh-CN">你好，我是钟选。</span><span lang="en">Hello, I'm Xuan Zhong.</span></h1>
+        <p class="intro-text"><span lang="zh-CN">我在新南威尔士大学学习信息技术，方向为人工智能。目前关注视觉语言动作模型（VLA）的数据、训练与评测，以及机器人学习中的推理效率。这里记录我的项目与实践。</span><span lang="en">I study Information Technology with a focus on Artificial Intelligence at UNSW Sydney. My current interests are data, training, and evaluation for vision-language-action (VLA) models, alongside inference efficiency in robot learning. This site brings together my projects and practical work.</span></p><p class="interests">VLA · Robot Learning · Computer Vision</p>
+      </section>
+      <section id="currently" class="section"><div class="section-heading"><h2>Currently<span lang="zh-CN" class="heading-translation">近期在做</span></h2><span class="section-mark" aria-hidden="true">01</span></div>
+        <ul class="current-list"><li><span class="current-dot" aria-hidden="true"></span><div>
+          <strong class="current-title"><span lang="zh-CN">🎓 新南威尔士大学 · 信息技术硕士</span><span lang="en">🎓 Master of Information Technology @ UNSW Sydney</span></strong><p><span lang="zh-CN">预计 2027 年 8 月毕业</span><span lang="en">Graduating Aug 2027</span></p></div></li></ul>
+      </section>
+      <section id="selected-work" class="section"><div class="section-heading"><h2>Selected Work<span lang="zh-CN" class="heading-translation">精选项目</span></h2><span class="section-mark" aria-hidden="true">02</span></div>
+        <div class="projects"><article class="project" id="smolvla-flow">
+          <div class="project-meta"><span><span lang="zh-CN">进行中</span><span lang="en">Ongoing</span></span><span class="category"><span lang="zh-CN">具身智能</span><span lang="en">Embodied AI</span></span></div>
+          <h3><span lang="zh-CN">SmolVLA Flow-Matching 动作专家蒸馏与异步闭环优化</span><span lang="en">SmolVLA Flow-Matching: Action Expert Distillation and Asynchronous Control</span></h3><p><span lang="zh-CN">在统一的 LIBERO 任务协议下比较 ACT、Diffusion Policy 与不同推理步数的 SmolVLA，研究策略成功率与推理效率之间的取舍。</span><span lang="en">Comparing ACT, Diffusion Policy, and SmolVLA with different inference step counts under a shared LIBERO task protocol, studying the trade-offs between policy success and inference efficiency.</span></p>
+          <div class="project-bottom"><ul class="tags" aria-label="Technologies"><li>SmolVLA</li><li>Flow Matching</li><li>LeRobot</li><li>LIBERO</li></ul><a class="project-link" href="https://github.com/jojo052/smolvla-flow">GitHub <span aria-hidden="true">↗</span></a></div>
+        </article>
+<article class="project" id="video-annotation">
+          <div class="project-meta"><span><span lang="zh-CN">2026.06 至 2026.08 · 商汤科技</span><span lang="en">Jun to Aug 2026 · SenseTime</span></span><span class="category"><span lang="zh-CN">视觉数据</span><span lang="en">Visual Data</span></span></div>
+          <h3><span lang="zh-CN">开放词汇多模态视频自动标注</span><span lang="en">Open-Vocabulary Multimodal Video Annotation</span></h3><p><span lang="zh-CN">基于 X-AnyLabeling、YOLOE 与 SAM 2 构建视频自动标注流程，关注遮挡后的身份恢复与跨帧轨迹一致性。</span><span lang="en">Building a video annotation workflow with X-AnyLabeling, YOLOE, and SAM 2, with a focus on identity recovery after occlusion and consistent trajectories across frames.</span></p>
+          <div class="project-bottom"><ul class="tags" aria-label="Technologies"><li>YOLOE</li><li>SAM 2</li><li>X-AnyLabeling</li></ul></div>
+        </article>
+<article class="project" id="on-device-vision">
+          <div class="project-meta"><span><span lang="zh-CN">2026.06 至 2026.08 · 商汤科技</span><span lang="en">Jun to Aug 2026 · SenseTime</span></span><span class="category"><span lang="zh-CN">端侧视觉</span><span lang="en">On-Device Vision</span></span></div>
+          <h3><span lang="zh-CN">端侧实时姿态感知与运动事件识别</span><span lang="en">Real-Time Pose Perception and Sports Event Recognition</span></h3><p><span lang="zh-CN">面向移动设备的视频分析，结合姿态检测、目标跟踪与时序状态机识别运动事件。</span><span lang="en">Video analysis on mobile devices, combining pose detection, object tracking, and temporal state machines to recognize sports events.</span></p>
+          <div class="project-bottom"><ul class="tags" aria-label="Technologies"><li>YOLO-Pose</li><li>Core ML</li><li>Tracking</li></ul></div>
+        </article>
+<article class="project" id="multiview-pose">
+          <div class="project-meta"><span><span lang="zh-CN">2026.06 至 2026.08 · 商汤科技</span><span lang="en">Jun to Aug 2026 · SenseTime</span></span><span class="category"><span lang="zh-CN">三维视觉</span><span lang="en">3D Vision</span></span></div>
+          <h3><span lang="zh-CN">多视角 3D 姿态重建与轨迹稳定化</span><span lang="en">Multi-View 3D Pose Reconstruction and Trajectory Stabilization</span></h3><p><span lang="zh-CN">从多机位视频与二维关键点重建三维骨架，通过置信度过滤与轨迹平滑提升输出稳定性。</span><span lang="en">Reconstructing 3D skeletons from multi-camera video and 2D keypoints, using confidence filtering and trajectory smoothing to improve stability.</span></p>
+          <div class="project-bottom"><ul class="tags" aria-label="Technologies"><li>Triangulation</li><li>OpenCV</li><li>Kalman Filter</li></ul></div>
+        </article></div>
+      </section>
+      <section id="experience" class="section"><div class="section-heading"><h2>Experience<span lang="zh-CN" class="heading-translation">经历</span></h2><span class="section-mark" aria-hidden="true">03</span></div>
+        <article class="experience-item"><p class="date"><span lang="zh-CN">2026.06 至 2026.08</span><span lang="en">Jun to Aug 2026</span></p>
+      <div><h3><span lang="zh-CN">商汤科技</span><span lang="en">SenseTime</span><span class="job-role"><span lang="zh-CN">AI 产品研发</span><span lang="en">AI Product R&amp;D</span></span></h3>
+      <p><span lang="zh-CN">参与视频自动标注、端侧运动事件识别与多视角三维姿态重建。</span><span lang="en">Worked on video annotation, on-device sports event recognition, and multi-view 3D pose reconstruction.</span></p></div></article>
+      </section>
+      <footer><span>© <span id="year">2026</span> <span lang="zh-CN">钟选</span><span lang="en">Xuan Zhong</span></span><a href="https://github.com/jojo052">GitHub <span aria-hidden="true">↗</span></a></footer>
+      <details class="image-credits"><summary><span lang="zh-CN">星空影像来源</span><span lang="en">Space imagery credits</span> · NASA / ESA</summary>
+        <p><a href="https://science.nasa.gov/asset/hubble/westerlund-2/">Westerlund 2</a> · NASA, ESA, the Hubble Heritage Team (STScI/AURA), A. Nota (ESA/STScI), and the Westerlund 2 Science Team.</p>
+        <p><a href="https://science.nasa.gov/missions/hubble/quintuplet-cluster/">Quintuplet Cluster</a> · NASA.</p>
+      </details>
+    </main>
+  </div>
+</body>
+</html>

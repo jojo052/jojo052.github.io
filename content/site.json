@@ -1,0 +1,84 @@
+{
+  "profile": {
+    "name": {"zh": "钟选", "en": "Xuan Zhong"},
+    "role": {"zh": "具身智能 · 多模态学习", "en": "Embodied AI · Multimodal Learning"},
+    "education": {"zh": "新南威尔士大学", "en": "UNSW Sydney"},
+    "degree": {"zh": "信息技术硕士 · 人工智能方向", "en": "Master of Information Technology · Artificial Intelligence"},
+    "photo": "assets/profile-personal.jpeg",
+    "email": "isaac2027xuanzhong@163.com",
+    "github": "https://github.com/jojo052",
+    "intro": {
+      "zh": "我在新南威尔士大学学习信息技术，方向为人工智能。目前关注视觉语言动作模型（VLA）的数据、训练与评测，以及机器人学习中的推理效率。这里记录我的项目与实践。",
+      "en": "I study Information Technology with a focus on Artificial Intelligence at UNSW Sydney. My current interests are data, training, and evaluation for vision-language-action (VLA) models, alongside inference efficiency in robot learning. This site brings together my projects and practical work."
+    },
+    "interests": ["VLA", "Robot Learning", "Computer Vision"]
+  },
+  "currently": [
+    {
+      "sortDate": "",
+      "ongoing": true,
+      "title": {"zh": "🎓 新南威尔士大学 · 信息技术硕士", "en": "🎓 Master of Information Technology @ UNSW Sydney"},
+      "description": {"zh": "预计 2027 年 8 月毕业", "en": "Graduating Aug 2027"},
+      "url": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "smolvla-flow",
+      "visible": true,
+      "ongoing": true,
+      "sortDate": "",
+      "date": {"zh": "进行中", "en": "Ongoing"},
+      "category": {"zh": "具身智能", "en": "Embodied AI"},
+      "title": {"zh": "SmolVLA Flow-Matching 动作专家蒸馏与异步闭环优化", "en": "SmolVLA Flow-Matching: Action Expert Distillation and Asynchronous Control"},
+      "description": {"zh": "在统一的 LIBERO 任务协议下比较 ACT、Diffusion Policy 与不同推理步数的 SmolVLA，研究策略成功率与推理效率之间的取舍。", "en": "Comparing ACT, Diffusion Policy, and SmolVLA with different inference step counts under a shared LIBERO task protocol, studying the trade-offs between policy success and inference efficiency."},
+      "tags": ["SmolVLA", "Flow Matching", "LeRobot", "LIBERO"],
+      "url": "https://github.com/jojo052/smolvla-flow"
+    },
+    {
+      "id": "video-annotation",
+      "visible": true,
+      "ongoing": false,
+      "sortDate": "2026-08",
+      "date": {"zh": "2026.06 至 2026.08 · 商汤科技", "en": "Jun to Aug 2026 · SenseTime"},
+      "category": {"zh": "视觉数据", "en": "Visual Data"},
+      "title": {"zh": "开放词汇多模态视频自动标注", "en": "Open-Vocabulary Multimodal Video Annotation"},
+      "description": {"zh": "基于 X-AnyLabeling、YOLOE 与 SAM 2 构建视频自动标注流程，关注遮挡后的身份恢复与跨帧轨迹一致性。", "en": "Building a video annotation workflow with X-AnyLabeling, YOLOE, and SAM 2, with a focus on identity recovery after occlusion and consistent trajectories across frames."},
+      "tags": ["YOLOE", "SAM 2", "X-AnyLabeling"],
+      "url": ""
+    },
+    {
+      "id": "on-device-vision",
+      "visible": true,
+      "ongoing": false,
+      "sortDate": "2026-08",
+      "date": {"zh": "2026.06 至 2026.08 · 商汤科技", "en": "Jun to Aug 2026 · SenseTime"},
+      "category": {"zh": "端侧视觉", "en": "On-Device Vision"},
+      "title": {"zh": "端侧实时姿态感知与运动事件识别", "en": "Real-Time Pose Perception and Sports Event Recognition"},
+      "description": {"zh": "面向移动设备的视频分析，结合姿态检测、目标跟踪与时序状态机识别运动事件。", "en": "Video analysis on mobile devices, combining pose detection, object tracking, and temporal state machines to recognize sports events."},
+      "tags": ["YOLO-Pose", "Core ML", "Tracking"],
+      "url": ""
+    },
+    {
+      "id": "multiview-pose",
+      "visible": true,
+      "ongoing": false,
+      "sortDate": "2026-08",
+      "date": {"zh": "2026.06 至 2026.08 · 商汤科技", "en": "Jun to Aug 2026 · SenseTime"},
+      "category": {"zh": "三维视觉", "en": "3D Vision"},
+      "title": {"zh": "多视角 3D 姿态重建与轨迹稳定化", "en": "Multi-View 3D Pose Reconstruction and Trajectory Stabilization"},
+      "description": {"zh": "从多机位视频与二维关键点重建三维骨架，通过置信度过滤与轨迹平滑提升输出稳定性。", "en": "Reconstructing 3D skeletons from multi-camera video and 2D keypoints, using confidence filtering and trajectory smoothing to improve stability."},
+      "tags": ["Triangulation", "OpenCV", "Kalman Filter"],
+      "url": ""
+    }
+  ],
+  "experience": [
+    {
+      "sortDate": "2026-08",
+      "date": {"zh": "2026.06 至 2026.08", "en": "Jun to Aug 2026"},
+      "company": {"zh": "商汤科技", "en": "SenseTime"},
+      "role": {"zh": "AI 产品研发", "en": "AI Product R&D"},
+      "description": {"zh": "参与视频自动标注、端侧运动事件识别与多视角三维姿态重建。", "en": "Worked on video annotation, on-device sports event recognition, and multi-view 3D pose reconstruction."}
+    }
+  ]
+}
