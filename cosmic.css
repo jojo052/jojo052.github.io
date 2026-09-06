@@ -36,7 +36,7 @@ body::after {
 .wordmark { color: #f3f7ff; }
 .wordmark-dot { text-shadow: 0 0 17px #3c8fff; }
 nav { gap: 12px; }
-nav a, .language-switch button, .project-link, .profile-links a {
+nav a, .language-switch button, .project-link, .profile-links a, .email-copy {
   border: 1px solid rgba(111, 171, 255, .3);
   border-radius: 7px;
   background-color: #07172d;
@@ -48,7 +48,7 @@ nav a, .language-switch button, .project-link, .profile-links a {
   transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease, transform .2s ease;
 }
 nav a { padding: 6px 12px; }
-nav a:hover, .language-switch button:hover, .project-link:hover, .profile-links a:hover {
+nav a:hover, .language-switch button:hover, .project-link:hover, .profile-links a:hover, .email-copy:hover {
   text-decoration: none;
   border-color: #73aeff;
   color: #fff;
@@ -96,8 +96,27 @@ nav a:hover, .language-switch button:hover, .project-link:hover, .profile-links 
 }
 .profile-role, .profile-education, .degree { color: #b7c8e2; }
 .profile-links { gap: 9px; }
-.profile-links a { display: block; padding: 7px 9px; font-size: 13px; }
-.profile-links a:last-child { font-size: 12px; }
+.profile-links a, .email-copy { display: block; padding: 7px 9px; font-size: 13px; }
+.email-control { position: relative; }
+.email-copy { width: 100%; text-align: left; cursor: pointer; line-height: 1.8; }
+.email-copy:disabled { cursor: wait; }
+.copy-status {
+  position: absolute;
+  top: calc(100% + 7px);
+  left: 0;
+  z-index: 2;
+  max-width: 100%;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #091a34;
+  color: #d4e6ff;
+  font-size: 12px;
+  line-height: 1.6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .3);
+  pointer-events: none;
+}
+.copy-status:empty { display: none; }
 .link-icon { color: #8ebfff; }
 .intro {
   padding: 27px 29px;
@@ -162,12 +181,12 @@ footer { color: #a4b5cf; border-color: var(--line); margin-top: 44px; }
   .profile { padding: 19px 16px; gap: 19px; }
   .portrait-frame { width: 105px; height: 128px; flex-shrink: 0; margin-bottom: 0; }
   .profile-copy { min-width: 0; }
-  .profile-links a { padding: 5px 7px; }
+  .profile-links a, .email-copy { padding: 5px 7px; }
   .intro { padding: 23px 20px; }
   .project, .project:last-child { padding: 20px; }
   .current-list { padding: 17px; }
   .experience-item { padding: 19px; }
 }
 @media (prefers-reduced-motion: reduce) {
-  nav a, .language-switch button, .project-link, .profile-links a, .project { transition: none; transform: none; }
+  nav a, .language-switch button, .project-link, .profile-links a, .email-copy, .project { transition: none; transform: none; }
 }

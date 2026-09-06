@@ -17,7 +17,7 @@
     <a class="wordmark" href="#about">{{NAME}}<span class="wordmark-dot">.</span></a>
     <nav aria-label="Main navigation">
       <a href="#currently">Currently</a><a href="#selected-work">Selected Work</a>
-      <a href="#experience"><span lang="zh-CN">经历</span><span lang="en">Experience</span></a>
+      <a href="#experience">Experience</a>
     </nav>
     <div class="language-switch" role="group" aria-label="Language / 语言">
       <button type="button" data-set-language="zh" aria-pressed="true">中</button><span aria-hidden="true">/</span>
@@ -30,20 +30,21 @@
       <div class="profile-copy"><h2>{{NAME}}</h2><p class="profile-role">{{ROLE}}</p>
       <p class="profile-education">{{EDUCATION}}<span class="degree">{{DEGREE}}</span></p>
       <div class="profile-links"><a href="{{GITHUB}}"><span class="link-icon" aria-hidden="true">↗</span> GitHub</a>
-      <a href="mailto:{{EMAIL}}"><span class="link-icon" aria-hidden="true">@</span> {{EMAIL}}</a></div></div>
+      <div class="email-control"><button type="button" class="email-copy" data-copy-email="{{EMAIL}}" aria-label="复制邮箱地址"><span class="link-icon" aria-hidden="true">@</span> E-mail</button>
+      <span id="email-copy-status" class="copy-status" role="status" aria-live="polite"></span></div></div></div>
     </aside>
     <main id="main">
       <section class="intro" id="about"><p class="eyebrow">VLA · DATA · TRAINING · EVALUATION</p>
         <h1><span lang="zh-CN">你好，我是{{TITLE_ZH}}。</span><span lang="en">Hello, I'm {{TITLE_EN}}.</span></h1>
         <p class="intro-text">{{INTRO}}</p><p class="interests">{{INTERESTS}}</p>
       </section>
-      <section id="currently" class="section"><div class="section-heading"><h2>Currently<span lang="zh-CN" class="heading-translation">近期在做</span></h2><span class="section-mark" aria-hidden="true">01</span></div>
+      <section id="currently" class="section"><div class="section-heading"><h2>Currently</h2><span class="section-mark" aria-hidden="true">01</span></div>
         <ul class="current-list">{{CURRENT}}</ul>
       </section>
-      <section id="selected-work" class="section"><div class="section-heading"><h2>Selected Work<span lang="zh-CN" class="heading-translation">精选项目</span></h2><span class="section-mark" aria-hidden="true">02</span></div>
+      <section id="selected-work" class="section"><div class="section-heading"><h2>Selected Work</h2><span class="section-mark" aria-hidden="true">02</span></div>
         <div class="projects">{{PROJECTS}}</div>
       </section>
-      <section id="experience" class="section"><div class="section-heading"><h2>Experience<span lang="zh-CN" class="heading-translation">经历</span></h2><span class="section-mark" aria-hidden="true">03</span></div>
+      <section id="experience" class="section"><div class="section-heading"><h2>Experience</h2><span class="section-mark" aria-hidden="true">03</span></div>
         {{EXPERIENCE}}
       </section>
       <footer><span>© <span id="year">2026</span> {{NAME}}</span><a href="{{GITHUB}}">GitHub <span aria-hidden="true">↗</span></a></footer>

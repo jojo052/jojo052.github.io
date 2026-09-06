@@ -6,6 +6,8 @@
 
 编辑 `content/site.json`。`zh` 是中文，`en` 是英文。
 
+侧栏邮箱按钮固定显示 `@ E-mail`，点击复制 `profile.email`；复制结果会短暂显示在按钮下方。Currently、Selected Work、Experience 三个栏目标题固定使用英文，其他内容继续支持中英文切换。
+
 | 字段 | 内容 |
 | --- | --- |
 | `profile` | 姓名、照片、个人介绍、教育信息、邮箱、GitHub |

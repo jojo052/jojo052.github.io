@@ -1,7 +1,7 @@
 {
   "profile": {
     "name": {"zh": "钟选", "en": "Xuan Zhong"},
-    "role": {"zh": "具身智能 · 多模态学习", "en": "Embodied AI · Multimodal Learning"},
+    "role": {"zh": "具身智能 · 多模态大模型", "en": "Embodied AI · Multimodal Foundation Models"},
     "education": {"zh": "新南威尔士大学", "en": "UNSW Sydney"},
     "degree": {"zh": "信息技术硕士 · 人工智能方向", "en": "Master of Information Technology · Artificial Intelligence"},
     "photo": "assets/profile-personal.jpeg",
