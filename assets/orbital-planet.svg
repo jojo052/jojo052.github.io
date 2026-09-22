@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="540" viewBox="0 0 540 540" fill="none">
+  <defs>
+    <radialGradient id="halo"><stop stop-color="#2566CF" stop-opacity=".26"/><stop offset="1" stop-color="#2566CF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="sphere" cx=".28" cy=".19" r=".85"><stop stop-color="#75BFF0"/><stop offset=".17" stop-color="#377AB9"/><stop offset=".44" stop-color="#133560"/><stop offset=".72" stop-color="#050E20"/><stop offset="1" stop-color="#020611"/></radialGradient>
+    <linearGradient id="rim" x1="170" y1="160" x2="363" y2="362" gradientUnits="userSpaceOnUse"><stop stop-color="#C6EAFF"/><stop offset=".36" stop-color="#599EE7" stop-opacity=".5"/><stop offset=".7" stop-color="#2E65B7" stop-opacity=".08"/></linearGradient>
+    <linearGradient id="ring" x1="50" y1="275" x2="490" y2="250" gradientUnits="userSpaceOnUse"><stop stop-color="#78A7ED" stop-opacity=".1"/><stop offset=".26" stop-color="#76AAE8" stop-opacity=".8"/><stop offset=".65" stop-color="#B9DFFF"/><stop offset="1" stop-color="#578BDC" stop-opacity=".2"/></linearGradient>
+    <clipPath id="surface"><circle cx="270" cy="270" r="108"/></clipPath>
+    <filter id="bloom" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="5"/></filter>
+  </defs>
+  <circle cx="265" cy="260" r="260" fill="url(#halo)"/>
+  <g stroke="#6FA9EE" stroke-opacity=".15" stroke-width=".7">
+    <circle cx="270" cy="270" r="205" stroke-dasharray="1 9"/>
+    <circle cx="270" cy="270" r="228" stroke-dasharray="100 280 30 360" transform="rotate(20 270 270)"/>
+    <path d="M270 26v18M270 496v18M26 270h18M496 270h18"/>
+  </g>
+  <g transform="rotate(-27 270 270)">
+    <ellipse cx="270" cy="270" rx="218" ry="62" stroke="url(#ring)" stroke-width="2"/>
+    <ellipse cx="270" cy="270" rx="198" ry="53" stroke="#5C96D3" stroke-opacity=".4" stroke-width="7"/>
+    <ellipse cx="270" cy="270" rx="183" ry="48" stroke="#93C9FF" stroke-opacity=".3"/>
+  </g>
+  <circle cx="270" cy="270" r="109" stroke="#78BEFF" stroke-opacity=".28" stroke-width="5" filter="url(#bloom)"/>
+  <circle cx="270" cy="270" r="108" fill="url(#sphere)" stroke="url(#rim)" stroke-width="1.5"/>
+  <g clip-path="url(#surface)" opacity=".12" stroke="#8AC5F2" transform="rotate(-27 270 270)">
+    <path d="M145 195q110 47 235 2M133 209q133 47 270 2M130 225q137 52 275 6M130 244q135 45 278 7M137 265q127 49 260 10M137 298q127 34 260 3M139 309q127 32 260 3" stroke-width="3"/>
+    <path d="M134 218q134 49 269 3M130 252q137 48 275 7M137 284q127 42 260 10M149 332q120 32 250 3"/>
+  </g>
+  <g transform="rotate(-27 270 270)">
+    <path d="M52 270a218 62 0 0 0 436 0" stroke="url(#ring)" stroke-width="2"/>
+    <path d="M72 270a198 53 0 0 0 396 0" stroke="#79ADE5" stroke-opacity=".65" stroke-width="7"/>
+    <path d="M87 270a183 48 0 0 0 366 0" stroke="#B5DCFF" stroke-opacity=".55"/>
+    <path d="M65 276q196 104 409-2" stroke="#5894E8" stroke-opacity=".3" stroke-width="2" filter="url(#bloom)"/>
+  </g>
+  <circle cx="415" cy="125" r="5" fill="#C6E4FF"/>
+  <circle cx="415" cy="125" r="11" stroke="#74B4F0" stroke-opacity=".3"/>
+  <circle cx="102" cy="388" r="2" fill="#77B3EE"/>
+  <path d="M135 116v12m-6-6h12M435 378v8m-4-4h8" stroke="#A4D4FF" stroke-opacity=".7"/>
+</svg>

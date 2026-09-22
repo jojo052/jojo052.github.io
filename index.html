@@ -8,10 +8,16 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="cosmic.css">
-  <meta name="theme-color" content="#030711">
+  <meta name="theme-color" content="#030610">
   <script src="app.js" defer></script>
+  <script src="space.js" defer></script>
 </head>
 <body data-title-zh="钟选" data-title-en="Xuan Zhong">
+  <div class="space-scene" aria-hidden="true">
+    <div class="nebula"></div>
+    <canvas id="starfield"></canvas>
+    <div class="celestial-horizon"></div>
+  </div>
   <a class="skip-link" href="#main"><span lang="zh-CN">跳转至内容</span><span lang="en">Skip to content</span></a>
   <header class="site-header"><div class="header-inner">
     <a class="wordmark" href="#about"><span lang="zh-CN">钟选</span><span lang="en">Xuan Zhong</span><span class="wordmark-dot">.</span></a>
@@ -34,7 +40,9 @@
       <span id="email-copy-status" class="copy-status" role="status" aria-live="polite"></span></div></div></div>
     </aside>
     <main id="main">
-      <section class="intro" id="about"><p class="eyebrow">VLA · DATA · TRAINING · EVALUATION</p>
+      <section class="intro" id="about">
+        <div class="orbital-visual" aria-hidden="true"><img src="assets/orbital-planet.svg" alt="" width="540" height="540"></div>
+        <p class="eyebrow">VLA · DATA · TRAINING · EVALUATION</p>
         <h1><span lang="zh-CN">你好，我是钟选。</span><span lang="en">Hello, I'm Xuan Zhong.</span></h1>
         <p class="intro-text"><span lang="zh-CN">我在新南威尔士大学学习信息技术，方向为人工智能。目前关注视觉语言动作模型（VLA）的数据、训练与评测，以及机器人学习中的推理效率。这里记录我的项目与实践。</span><span lang="en">I study Information Technology with a focus on Artificial Intelligence at UNSW Sydney. My current interests are data, training, and evaluation for vision-language-action (VLA) models, alongside inference efficiency in robot learning. This site brings together my projects and practical work.</span></p><p class="interests">VLA · Robot Learning · Computer Vision</p>
       </section>

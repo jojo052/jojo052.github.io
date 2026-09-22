@@ -43,14 +43,13 @@ python3 -m http.server 4173 --bind 127.0.0.1
 
 当前头像为 `assets/profile-personal.jpeg`，来自用户指定的 `个人照.jpeg`。修改 `content/site.json` 中的 `profile.photo` 可选择其他照片。原始照片完整保留，显示区域由 `cosmic.css` 中的 `.portrait-frame .portrait` 调整。
 
-`styles.css` 保留基础布局，`cosmic.css` 控制蓝黑星空主题、NASA 背景和按钮光效；`template.html` 控制页面结构。生成的 `index.html` 不建议直接编辑，重新生成会覆盖它。星空图片及完整署名见 `assets/CREDITS.md`，页面底部也可展开来源链接。
+`styles.css` 保留基础布局，`cosmic.css` 控制蓝黑星际主题、NASA 背景、天体轨道和按钮光效；`template.html` 控制页面结构。`assets/orbital-planet.svg` 是本地绘制的装饰行星，`space.js` 提供轻量星点动效和鼠标视差。星点绘制不超过 30fps，页面隐藏时暂停，系统启用减少动态效果时保持静态。生成的 `index.html` 不建议直接编辑，重新生成会覆盖它。星空图片及完整署名见 `assets/CREDITS.md`，页面底部也可展开来源链接。
 
 ## GitHub Pages
 
-发布目标为 [jojo052.github.io](https://jojo052.github.io/)，源码仓库为 [jojo052/jojo052.github.io](https://github.com/jojo052/jojo052.github.io)。GitHub Pages 使用 `main` 分支根目录发布。网页运行只需 `index.html`、`styles.css`、`cosmic.css`、`app.js`、`assets/` 和 `.nojekyll`；保留其他源文件方便更新。
+发布目标为 [jojo052.github.io](https://jojo052.github.io/)，源码仓库为 [jojo052/jojo052.github.io](https://github.com/jojo052/jojo052.github.io)。GitHub Pages 使用 `main` 分支根目录发布。网页运行只需 `index.html`、`styles.css`、`cosmic.css`、`app.js`、`space.js`、`assets/` 和 `.nojekyll`；保留其他源文件方便更新。
 
 每次修改内容后，重新生成网页，再提交并推送 `main` 分支，GitHub Pages 会更新网站。内容仍由 `content/site.json` 管理。
 
 无需 npm 或服务器运行时。未加入简历原文件的下载入口，以免旧版日期与主页信息混用。
-
 

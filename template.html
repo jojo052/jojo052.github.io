@@ -8,10 +8,16 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="cosmic.css">
-  <meta name="theme-color" content="#030711">
+  <meta name="theme-color" content="#030610">
   <script src="app.js" defer></script>
+  <script src="space.js" defer></script>
 </head>
 <body data-title-zh="{{TITLE_ZH}}" data-title-en="{{TITLE_EN}}">
+  <div class="space-scene" aria-hidden="true">
+    <div class="nebula"></div>
+    <canvas id="starfield"></canvas>
+    <div class="celestial-horizon"></div>
+  </div>
   <a class="skip-link" href="#main"><span lang="zh-CN">跳转至内容</span><span lang="en">Skip to content</span></a>
   <header class="site-header"><div class="header-inner">
     <a class="wordmark" href="#about">{{NAME}}<span class="wordmark-dot">.</span></a>
@@ -34,7 +40,9 @@
       <span id="email-copy-status" class="copy-status" role="status" aria-live="polite"></span></div></div></div>
     </aside>
     <main id="main">
-      <section class="intro" id="about"><p class="eyebrow">VLA · DATA · TRAINING · EVALUATION</p>
+      <section class="intro" id="about">
+        <div class="orbital-visual" aria-hidden="true"><img src="assets/orbital-planet.svg" alt="" width="540" height="540"></div>
+        <p class="eyebrow">VLA · DATA · TRAINING · EVALUATION</p>
         <h1><span lang="zh-CN">你好，我是{{TITLE_ZH}}。</span><span lang="en">Hello, I'm {{TITLE_EN}}.</span></h1>
         <p class="intro-text">{{INTRO}}</p><p class="interests">{{INTERESTS}}</p>
       </section>
